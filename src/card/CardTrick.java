@@ -44,10 +44,10 @@ public class CardTrick {
         luckyCard.setValue(2);
         luckyCard.setSuit("Clubs");
 
-    
+        boolean found=false;
         for(Card card:magicHand){
-            boolean found=false;
-            if(card.getValue()==luckyCard.getvalue() && card.getSuit().equalsIgnoreCase(luckyCard.getSuit())){
+            
+            if(card.getValue()==luckyCard.getValue() && card.getSuit().equalsIgnoreCase(luckyCard.getSuit())){
                 found=true;
             }
         }
